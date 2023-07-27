@@ -10,5 +10,5 @@ let passport2 = { ...passport };
 passport2.name = "Ivan";
 
 // вывод в консоль исходного объекта и его копии
-console.log(passport);
-console.log(passport2);
+console.log(passport.name);
+console.log(passport2.name);
