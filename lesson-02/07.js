@@ -8,8 +8,10 @@ let passportMarried = {
 };
 
 let passportMarried2 = {
-  ...passportMarried,
-  address: { ...passportMarried.address },
+	name:passportMarried.name,
+	surname:passportMarried.surname,
+	married:true,
+	address:{...passportMarried.address}
 };
 passportMarried2.married = true;
 
