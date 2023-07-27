@@ -4,11 +4,11 @@ let passport = {
 };
 
 // создание копии объекта passport
-let passportCopy = Object.assign({}, passport);
+let passport2 = { ...passport };
 
 // изменение имени в копии объекта
-passportCopy.name = "Ivan";
+passport2.name = "Ivan";
 
 // вывод в консоль исходного объекта и его копии
 console.log(passport);
-console.log(passportCopy);
+console.log(passport2);
