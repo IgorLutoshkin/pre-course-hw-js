@@ -1,18 +1,11 @@
 /* Перепеши наше старое задание создав функцию giveMeResult(), в которую будешь передавать день недели: */
 
 const giveMeResult = (day) => {
-  let dayOfWeek;
+  const dayOfWeek =
+    day === "Saturday" || day === "Sunday" ? "dayOff" : "weekday";
 
-  switch (day) {
-    case "Saturday":
-    case "Sunday":
-      dayOfWeek = "dayOff";
-      break;
-    default:
-      dayOfWeek = "weekday";
-      break;
-  }
-
+  // нужно добавить проверку на "Некорректное значение дня недели"
+  // скорее всего переписать на конструкцию if-else или через массив
   switch (dayOfWeek) {
     case "weekday":
       console.log("Будний день");
