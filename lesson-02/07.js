@@ -8,12 +8,31 @@ let passportMarried = {
 };
 
 let passportMarried2 = {
-	name:passportMarried.name,
-	surname:passportMarried.surname,
-	married:true,
-	address:{...passportMarried.address}
+  ...passportMarried,
+  married: true,
+  address: {
+    ...passportMarried.address,
+  },
 };
-// passportMarried2.married = passportMarried2.married;
+
+passportMarried2.married = true;
 
 console.log(passportMarried);
 console.log(passportMarried2);
+
+// Проверяем, что только один парень женат
+let marriedCount = 0;
+
+if (passportMarried.married) {
+  marriedCount++;
+}
+
+if (passportMarried2.married) {
+  marriedCount++;
+}
+
+console.log(
+  marriedCount === 1
+    ? "Все хорошо, только один парень женат"
+    : "Ошибка, несколько парней женаты"
+);
