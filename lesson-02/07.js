@@ -9,13 +9,12 @@ let passportMarried = {
 
 let passportMarried2 = {
   ...passportMarried,
-  married: true,
+
   address: { ...passportMarried.address },
 };
-
+passportMarried2.married = true;
 console.log(passportMarried);
 console.log(passportMarried2);
-
 
 /* 
 Ну и вишенка на торт: раз наш парень оказался «в нужное время в нужном месте», пора бы его женить):
