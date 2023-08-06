@@ -25,4 +25,6 @@ const newObj = {
 	surName: 'Susanin',
 	address: 'Unknown'
 }
-console.log(users2.concat(newObj));
+// console.log(users2.concat(newObj));
+
+console.log([...users2,newObj]);
