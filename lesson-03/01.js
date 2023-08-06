@@ -7,4 +7,4 @@ function createColorString() {
     )
     .join("-");
 }
-console.log(`'${createColorString()}'`);
+console.log(createColorString());
