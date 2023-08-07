@@ -30,8 +30,9 @@ const users3 = [
 			address: '321 Hickory St'
 	},
 ];
-
+let newArr = []
 for (let res of users3){
-res.isMarried=true
-console.log(res);	
+res.isMarried = true
+newArr.push(res)
 }
+console.log(newArr);
