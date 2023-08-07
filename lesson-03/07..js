@@ -3,6 +3,6 @@ const numbers = [
   [11, 20, 33, 40, 55],
   [111, 200, 333, 400, 555],
 ];
-let res = numbers.map(el => el.filter(item => item % 2 === 0))
+let newAr = numbers.map(el => el.filter(item => item % 2 === 0))
 
-console.log(res);
+console.log(newAr);
