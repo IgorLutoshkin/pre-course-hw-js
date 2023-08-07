@@ -25,4 +25,6 @@ const newObj = {
   surName: "Susanin",
   address: "Unknown",
 };
+newObj.id = 4
+
 console.log([...users2, newObj]);
